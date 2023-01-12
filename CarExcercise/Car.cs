@@ -18,29 +18,66 @@ namespace CarExcercise
 
         public void AskData()
         {
+            bool cont = true;
             Console.WriteLine("Anna auton merkki");
             this.merkki = Console.ReadLine();
-            Console.WriteLine("Anna auton nopeus");
-            this.nopeus = Convert.ToInt32(Console.ReadLine());
+            while(cont)
+            { 
+                Console.WriteLine("Anna auton nopeus");
+                try
+                {
+                    this.nopeus = Convert.ToInt32(Console.ReadLine());
+                    cont = false;
+                }
+                catch
+                {
+                    Console.WriteLine("Nopeus väärässä muodossa");
+                    cont = true;
+                }
+            }
         }
 
         public void ShowCarInfo()
         {
-            Console.WriteLine(this.merkki +" " + this.nopeus);
+            Console.WriteLine("merkki " +this.merkki +", nopeus " + this.nopeus);
         }
 
-        public void Accelerate(int nopeus)
+        public void Accelerate()
         {
-            if (nopeus > this.nopeus)
-                this.nopeus = nopeus;
+            double lisäys = 0;
+            Console.WriteLine("Paljon auton nopeutta lisätään");
+            bool cont = true;
+            while (cont)
+            {
+                try
+                {
+                    lisäys = Convert.ToInt32(Console.ReadLine());
+                    cont = false;
+                }
+                catch
+                {
+                    Console.WriteLine("Nopeus väärässä muodossa");
+                    cont = true;
+                }
+                
+            }
+
+
+
+
+            if (lisäys > 0)
+                this.nopeus += lisäys;
             else
                 this.nopeus = this.nopeus;
-
+            Console.WriteLine("Auton uudet tiedot");
+            ShowCarInfo();
         }
 
         public void Brake()
         {
+            Console.WriteLine("Toinen auto jarruttaa 10%, uudet tiedot ovat");
             this.nopeus = this.nopeus * 0.9;
+            ShowCarInfo();
         }
     }
 }

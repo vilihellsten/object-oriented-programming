@@ -9,11 +9,14 @@ internal class Program
         Car secondCar = new Car();
         firstCar.AskData();
         secondCar.AskData();
+        Console.WriteLine("Kahden auton syöttämäsi tiedot");
         firstCar.ShowCarInfo();
         secondCar.ShowCarInfo();
-        firstCar.Accelerate(210);
-        firstCar.ShowCarInfo();
+        Console.WriteLine("\nLisätään ensimmäisen auton nopeutta");
+        firstCar.Accelerate();
+        Console.WriteLine();
         secondCar.Brake();
-        secondCar.ShowCarInfo();
+        Console.ReadLine();
+        
     }
 }
