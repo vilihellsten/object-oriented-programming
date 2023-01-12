@@ -62,9 +62,6 @@ namespace CarExcercise
                 
             }
 
-
-
-
             if (lisäys > 0)
                 this.nopeus += lisäys;
             else
