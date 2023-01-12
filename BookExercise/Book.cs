@@ -73,6 +73,13 @@ namespace BookExercise
             // TÄLLÄ HETKELLÄ TÄMÄ KÄYTÖSSÄ
         }
 
+        public void CompareBooks(Book other) // voi nimetä muuttujan miksi vaan?
+        {
+            Console.WriteLine(this.title);
+            Console.WriteLine(other.title);
+
+        }
+
         public void SetID(string id)
         {
             if (id.Length == 5)
