@@ -13,7 +13,8 @@ namespace CarExcercise
 
         public Car()
         {
-            
+            this.merkki = string.Empty;
+            this.nopeus = 0;
         }
 
         public void AskData()
