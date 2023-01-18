@@ -10,7 +10,7 @@ internal class Program
         employees[1] = new Employee("Mari", "2", "Sihteeri", 5000);
         employees[2] = new Employee("Keijo", "3", "Siivooja", 1500);
 
-        Console.WriteLine("\nVertaa parametrina saamaansa työntekijän palkkaa kutsuttavan olion palkkaan.");
+        Console.WriteLine("\nVertaa kahden työntekijän palkkoja keskenään CompareSalaryn avulla.");
         employees[0].CompareSalary(employees[1]);
 
         Console.WriteLine("\nTulostaa työntekijän tiedot PrintEmployeeInfon avulla.");
@@ -20,7 +20,7 @@ internal class Program
         Console.WriteLine(employees[0].ToString());
 
 
-        Console.WriteLine("\nTulostaa vertailtavat henkilöt ja heidän palkkansa sekä vertailee palkan suuruutta keskenään for loopilla.");
+        Console.WriteLine("\nTulostaa kaikki taulukon henkilöt ja heidän palkkansa käyttäen CompareSalarya\nsekä vertailee palkan suuruutta keskenään for loopilla.\n");
         int n = 1;        
         for(int i = 0; i < employees.Length; i++)
         {
