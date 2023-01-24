@@ -32,8 +32,8 @@ internal class Program
             {
                 n = 0;
             }
-                employees[i].CompareSalary(employees[n]);
-                n++;
+            employees[i].CompareSalary(employees[n]);
+            n++;
         }
         
     }
