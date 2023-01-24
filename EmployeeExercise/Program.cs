@@ -19,12 +19,12 @@ internal class Program
         Console.WriteLine("\nTulostaa työntekijän tiedot ToStringin avulla.");
         Console.WriteLine(employees[0].ToString());
 
-        Console.WriteLine("\nTulostaa kaikkien työntekijöiden tiedot näytölle");
+        Console.WriteLine("\nTulostaa kaikkien työntekijöiden tiedot näytölle nähtäväksi.");
         employees[0].PrintEmployeeInfo();
         employees[1].PrintEmployeeInfo();
         employees[2].PrintEmployeeInfo();
 
-        Console.WriteLine("\nKäy kaikki taulukon henkilöt läpi for loopin avulla ja vertailee heidän palkkaansa käyttäen CompareSalarya");
+        Console.WriteLine("\nKäy kaikki taulukon henkilöt läpi for loopin avulla ja vertailee heidän palkkaansa käyttäen CompareSalarya.");
         int n = 1;        
         for(int i = 0; i < employees.Length; i++)
         {

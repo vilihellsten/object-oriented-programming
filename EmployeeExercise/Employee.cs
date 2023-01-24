@@ -32,7 +32,7 @@ namespace EmployeeExercise
                 Console.WriteLine(this.name + ", " + this.salary + ", " + employees.name + ", " + employees.salary + ", Henkilön " + employees.name + " palkka on suurempi.");
         }
 
-        public Employee(string v1, string v2, string v3, int v4)
+        public Employee(string v1, string v2, string v3, double v4)
         {
             this.name = v1;
             this.id = v2;
