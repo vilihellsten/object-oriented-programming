@@ -23,6 +23,9 @@ namespace EmployeeExercise
 
         public void CompareSalary(Employee employees)
         {
+            if (this.salary == employees.salary)
+                Console.WriteLine(this.name + ", " + this.salary + ", " + employees.name + ", " + employees.salary + ", Henkilöiden palkat ovat yhtäsuuret.");
+            else
             if (this.salary > employees.salary)
                 Console.WriteLine(this.name + ", " + this.salary + ", " + employees.name + ", " + employees.salary + ", Henkilön " + this.name + " palkka on suurempi.");
             else
