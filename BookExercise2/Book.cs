@@ -58,8 +58,8 @@ namespace BookExercise2
                 }
                 else
                 {
-                    Console.WriteLine(value + " Tämä ISBN ei kelpaa, syötä uusi, 13 merkkiä pitkä ja aloitettava numeroilla 978");
-                        
+                    Console.WriteLine(value + " : Tämä ISBN ei kelpaa, syötä uusi, 13 merkkiä pitkä ja aloitettava numeroilla 978");
+                    
                     value = Console.ReadLine();
                     cont = true;
                 }

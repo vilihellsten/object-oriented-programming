@@ -16,17 +16,17 @@ internal class Program
 
         // Tämä ISBN on väärä ja kysyy käyttäjää uudelleen kirjoittamaan ISBN numeron
         Book book3 = new Book("Saksa", "Kerttu K", "Vuotsi", 15, "968sdfjlkqwe3");
-        
-        // Hakee kirjat ISBN numeron mukaan, ilmiottaa jos väärä ISBN
+
+        Console.WriteLine("\nHakee kirjat ISBN numeron mukaan, ilmiottaa jos väärä ISBN");
         book1.GetBookDetails("978asdqwerty1");
         book2.GetBookDetails("978asduiower2");
         book2.GetBookDetails("9781111111111");
 
-        // Muuttaa kirjojen teeman alekirjoiksi ja tulostus näyttää tämän
+        Console.WriteLine("\nMuuttaa kirjojen teeman alekirjoiksi ja tulostus näyttää tämän");
         Book.ChangeTheme("Alekirjat");
         book1.GetBookDetails("978asdqwerty1");
 
-        // Tämä kutsuu book1 authoria
+        Console.WriteLine("\nKutsuu kirjan authoria ja tulostaa sen");
         Console.WriteLine("Kirjan author on " + book1.Author);
     }
 }
