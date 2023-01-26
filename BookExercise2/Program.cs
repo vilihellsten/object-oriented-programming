@@ -1,4 +1,5 @@
 ﻿using System.Runtime.CompilerServices;
+using Literature;
 using BookExercise2;
 
 internal class Program
@@ -10,11 +11,11 @@ internal class Program
 
         Console.WriteLine(person.Name);*/
 
-        // Näiden kirjojen ISBN on käypä ja menevät mutkitta, myös englannin kielen kirjaan tulee alennuss koska hinta yli 30
+        // Näiden kirjojen ISBN on käypä ja menevät mutkitta, myös englannin kielen kirjaan tulee alennus koska hinta yli 30e
         Book book1 = new Book("Matikka", "Ville K", "Kalaja", 25,"978asdqwerty1");
         Book book2 = new Book("Englanti", "Kalle V", "Kujala", 35, "978asduiower2");
 
-        // Tämä ISBN on väärä ja kysyy käyttäjää uudelleen kirjoittamaan ISBN numeron
+        // Tämä ISBN ei kelpaa ja kysyy käyttäjää uudelleen kirjoittamaan ISBN numeron
         Book book3 = new Book("Saksa", "Kerttu K", "Vuotsi", 15, "968sdfjlkqwe3");
 
         Console.WriteLine("\nHakee kirjat ISBN numeron mukaan, ilmoittaa jos väärä ISBN");
