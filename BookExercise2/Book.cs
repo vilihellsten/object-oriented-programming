@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BookExercise2
+﻿namespace BookExercise2
 {
     internal class Book
     {
@@ -72,19 +65,21 @@ namespace BookExercise2
             {
                 return author;
             }
-
-            
         }
+
+        public string Name { get => name; set => name = value; }
+        public string Publisher { get => publisher; set => publisher = value; }
 
         public static void ChangeTheme(string value)
         {
             theme = value;
         }
+
         public Book()
         {
-            this.name = string.Empty;
+            this.Name = string.Empty;
             this.author = string.Empty;
-            this.publisher = string.Empty;
+            this.Publisher = string.Empty;
             this.Price = 0;
             this.Isbn = string.Empty;
             theme = string.Empty;
@@ -92,9 +87,9 @@ namespace BookExercise2
 
         public Book(string name, string author, string publisher, double price, string isbn)
         {
-            this.name = name;
+            this.Name = name;
             this.author = author;
-            this.publisher = publisher;
+            this.Publisher = publisher;
             this.Price = price;
             this.Isbn = isbn;
         }
@@ -103,15 +98,19 @@ namespace BookExercise2
         {
             if(this.Isbn == isbn)
             {
-                Console.WriteLine(this.name + ", " + this.Author + ", " + this.publisher + ", " + this.Price.ToString("0.00") + ", " + this.Isbn + ", " + theme);
+                Console.WriteLine(this.Name + ", " + this.Author + ", " + this.Publisher + ", " + this.Price.ToString("0.00") + ", " + this.Isbn + ", " + theme);
             }
             else
             {
-                Console.WriteLine("Kirjan tietoja ei voida tulostaa");
+                Console.WriteLine("Kirjan tietoja ei voida tulostaa, väärä ISBN");
             }
         }
 
-        
+        public override string? ToString()
+        {
+          
+            return " Kirjan nimi " + this.Name + ", Publisher " + this.Publisher + "\nHinta " + this.Price + "e, ISBN numero " + this.Isbn + ", Kirjan teema on " + theme +"\n";
 
+        }
     }
 }
