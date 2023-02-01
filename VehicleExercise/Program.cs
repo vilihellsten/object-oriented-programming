@@ -29,6 +29,7 @@ internal class Program
         Employee p = johtaja2 as Employee;
         p.GetInfo(); 
         */
+        
         Vehicle car1 = new Vehicle("Audi", "A3", 1970, 2500);
         car1.PrintInformation();
         Console.WriteLine();
@@ -40,7 +41,6 @@ internal class Program
 
         Console.WriteLine("\nAuton tiedot PrintInformationin avulla");
         mersu.PrintInformation();
-
 
         Console.WriteLine("\n\nAuton tiedot ToStringin avulla");
         Console.WriteLine(toyota.ToString());
@@ -58,43 +58,33 @@ internal class Program
         Truck ford = new Truck("Ford", "AV24", 1985,20000, 300,"Truck", 2, 6000, 30);
         Console.WriteLine("\nTulostaa rekan tiedot");
         ford.PrintInformation();
+
+        Console.WriteLine("\nTulostaa rekan kulutuksen");
         ford.CalculateConsumption();
 
         //truck # = car as Truck;
-        // jos # on null tyyppimuunnos ei onnistu, jos # ei ole null voidaan kutsua to string;
-        Truck ford1 = toyota as Truck; //trukista autoksi
-        car3.PrintInformation();
-
-        C
-
-
-        /*
-        Car cartotruck = toyota as Truck;
-        if(cartotruck != null)
+        // jos null, tyyppimuunnos ei onnistu, jos ei ole null voidaan kutsua to string;
+        Console.WriteLine("\nYrittää muuttaa Car luokkaa Truck luokaksi ja toisten päin, kertoo jos mahdollista\n");
+        Truck truck1 = toyota as Truck;
+        if(truck1 != null)
         {
-            Console.WriteLine("Ei voi muuttaa truckkia autoksi");
-            
+            Console.WriteLine(truck1.ToString());
         }
         else
         {
-            Console.WriteLine("Ei toimi");
-        }*/
-        /*
-        Truck trucktocar1 = new Truck();
-        Car trucktocar2 = trucktocar1 as Car;
+            Console.WriteLine("Ei voida muuntaa");
+        }
 
-        Car cartotruck1 = new Car();
-        Truck cartotruck2 = cartotruck1 as Truck; 
-        if(cartotruck1 != null)
+        Car car2 = ford as Car;
+        if(car2 != null)
         {
-            Console.WriteLine("Toimii");
+            Console.WriteLine("\nOn mahdollista, tulostaa muutetun luokan tiedot tiedot");
+            Console.WriteLine(car2.ToString());
         }
         else
         {
-            Console.WriteLine("Ei toimi");
+            Console.WriteLine("Ei voida muuntaa");
         }
-        */
-
 
 
 
