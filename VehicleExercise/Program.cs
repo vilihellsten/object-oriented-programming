@@ -38,7 +38,7 @@ internal class Program
 
         Car mersu = new Car("Mersu", "A1", 1990, 10000, 150, "Sport" , 4);
         Car toyota = new Car("Toyota", "Avensis", 1980, 15000, 250, "Farmari", 4);
-
+        // muista merkitä mikä oli abstracti
         Console.WriteLine("\nAuton tiedot PrintInformationin avulla");
         mersu.PrintInformation();
 
