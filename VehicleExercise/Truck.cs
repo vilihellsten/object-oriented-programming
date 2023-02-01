@@ -24,7 +24,7 @@ namespace VehicleExercise
         }
         public void CalculateConsumption()
         {
-            double kulutus = this.consumption / this.load;
+            double kulutus = this.load / this.consumption;
             Console.WriteLine(this.make + ", Kulutus: " + kulutus);
         }
 

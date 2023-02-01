@@ -55,7 +55,7 @@ internal class Program
             Console.WriteLine(mersu.ToString() + "\nOn eri kuin\n" + toyota.ToString());
         }
 
-        Truck ford = new Truck("Ford", "AV24", 1985,20000, 300,"Truck", 2, 1500, 50);
+        Truck ford = new Truck("Ford", "AV24", 1985,20000, 300,"Truck", 2, 1500, 40);
         Console.WriteLine("\nTulostaa rekan tiedot");
         ford.PrintInformation();
 
