@@ -29,10 +29,10 @@ internal class Program
         Employee p = johtaja2 as Employee;
         p.GetInfo(); 
         */
-        
+        /*
         Vehicle car1 = new Vehicle("Audi", "A3", 1970, 2500);
         car1.PrintInformation();
-        Console.WriteLine();
+        Console.WriteLine();*/
 
         // LAITA ABSRACTICSI JA VIHREÄMAALAA SEN JÄLKEEN
 
@@ -55,15 +55,13 @@ internal class Program
             Console.WriteLine(mersu.ToString() + "\nOn eri kuin\n" + toyota.ToString());
         }
 
-        Truck ford = new Truck("Ford", "AV24", 1985,20000, 300,"Truck", 2, 6000, 30);
+        Truck ford = new Truck("Ford", "AV24", 1985,20000, 300,"Truck", 2, 1500, 50);
         Console.WriteLine("\nTulostaa rekan tiedot");
         ford.PrintInformation();
 
         Console.WriteLine("\nTulostaa rekan kulutuksen");
         ford.CalculateConsumption();
 
-        //truck # = car as Truck;
-        // jos null, tyyppimuunnos ei onnistu, jos ei ole null voidaan kutsua to string;
         Console.WriteLine("\nYrittää muuttaa Car luokkaa Truck luokaksi ja toisten päin, kertoo jos mahdollista\n");
         Truck truck1 = toyota as Truck;
         if(truck1 != null)
@@ -72,13 +70,13 @@ internal class Program
         }
         else
         {
-            Console.WriteLine("Ei voida muuntaa");
+            Console.WriteLine("Ei voida muuntaa Car => Truck");
         }
 
-        Car car2 = ford as Car;
-        if(car2 != null)
+        Car car2 = ford as Car; //Tämä toimisi itsestään mutta jätin if loopin tähän
+        if (car2 != null)
         {
-            Console.WriteLine("\nOn mahdollista, tulostaa muutetun luokan tiedot tiedot");
+            Console.WriteLine("\nOn mahdollista muuntaa Truck => Car, tulostaa muutetun luokan tiedot tiedot");
             Console.WriteLine(car2.ToString());
         }
         else

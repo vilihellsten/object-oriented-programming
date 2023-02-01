@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VehicleExercise
 {
-    internal class Vehicle
+    internal abstract class Vehicle
     {
         protected string make;
         protected string model;
