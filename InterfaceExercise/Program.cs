@@ -1,4 +1,5 @@
-﻿using InterfaceExercise;
+﻿using System.Dynamic;
+using InterfaceExercise;
 
 internal class Program
 {
@@ -8,7 +9,7 @@ internal class Program
         Console.OutputEncoding = System.Text.Encoding.UTF8;
 
         Product p1 = new Product("Puhelin", 150, 3);
-
+        p1.GetProduct("Puhelin");
 
         List<Product> products = new List<Product>() {
         new Product("Laturi",150, 4),
@@ -26,5 +27,30 @@ internal class Program
             //Console.WriteLine(p.GetProduct("Kuulokkeet")); // voi käydä listaa läpi näin ja palauttaa kuulokkeiden tiedot tällä
 
         }
+
+        List<Customer> customers = new List<Customer>() {
+            new Customer("Ville", 500),
+            new Customer("Kalle", 1500),
+            new Customer("Keijo", 2000) 
+        };
+
+        foreach (Customer c in customers)
+        {
+            if(c.GetCustomer("Kalle") != null)
+            {
+                
+                Console.WriteLine("Asiakas löytyi");
+                c.GetBonus();
+            }
+
+        }
+        Console.WriteLine("Store");
+
+        Store dna = new Store("DNA", 934000000);
+        dna.AddProducts(new Product("Laturi", 75,8)); //Kumpikin toimii
+        dna.AddProducts(p1);
+        
+        dna.PrintProducts();
     }
+
 }
