@@ -8,10 +8,7 @@ internal class Program
         Console.OutputEncoding = System.Text.Encoding.UTF8;
 
         Product p1 = new Product("Puhelin", 150, 3);
-        Console.WriteLine(p1.GetProduct("Puhelin"));
 
-        Console.WriteLine(p1.ToString());
-        Console.WriteLine(p1.CalculateTotal());
 
         List<Product> products = new List<Product>() {
         new Product("Laturi",150, 4),
@@ -21,7 +18,13 @@ internal class Program
 
         foreach (Product p in products)
         {
-            Console.WriteLine(p.ToString());
+            if (p.GetProduct("Kuulokkeet") != null)
+            {
+                Console.WriteLine("Kuulokkeet löytyi");
+                Console.WriteLine("Varaston arvo: " + p.CalculateTotal() + "€");
+            }
+            //Console.WriteLine(p.GetProduct("Kuulokkeet")); // voi käydä listaa läpi näin ja palauttaa kuulokkeiden tiedot tällä
+
         }
     }
 }
