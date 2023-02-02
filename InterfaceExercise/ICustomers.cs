@@ -10,6 +10,6 @@ namespace InterfaceExercise
     {
         void AddCustomers(Customer customer);
 
-        
+        void PrintCustomers();
     }
 }

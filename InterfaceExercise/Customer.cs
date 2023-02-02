@@ -43,5 +43,10 @@ namespace InterfaceExercise
                 Console.WriteLine("Bonus 5% =: " + this.purchases * 0.05 + "€, ostosten määrä " + this.purchases + "€");
             }
         }
+
+        public override string? ToString()
+        {
+            return "Nimi: " + this.name + ", Ostokset: " + this.purchases + "€";
+        }
     }
 }
