@@ -48,9 +48,12 @@ internal class Program
 
         Store dna = new Store("DNA", 934000000);
         dna.AddProducts(new Product("Laturi", 75,8)); //Kumpikin toimii
-        dna.AddProducts(p1);
+        dna.AddProducts(new Product("Tietokone", 650, 3));
+        dna.AddProducts(new Product("Tabletti", 550, 4));
         
         dna.PrintProducts();
+
+        Console.WriteLine(dna.ToString());
     }
 
 }

@@ -32,5 +32,10 @@ namespace InterfaceExercise
                 Console.WriteLine("Varaston arvo: " + product.CalculateTotal());
             }
         }
+
+        public override string? ToString()
+        {
+            return "Kaupan nimi: " + this.name + ", Liikevaihto: " + this.revenue + "€";
+        }
     }
 }
