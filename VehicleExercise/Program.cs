@@ -7,38 +7,16 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        //Person person = new Person();
         /*
-        Employee employee1 = new Employee();
-        employee1.GetInfo();
-        Employee johtaja = new Employee("Kalle", "zxc");
-        Employee johtaja2 = new Employee("Kulle", "sc");
-        johtaja.GetInfo();
-
-        Console.WriteLine(johtaja.ToString());
-        
-        Console.WriteLine(johtaja.Equals(johtaja2));
-        if(johtaja.Equals(johtaja2))
-        {
-            Console.WriteLine(johtaja.ToString() + "erisuuri kuin " + johtaja2.ToString());
-        }
-        else
-        {
-            Console.WriteLine(johtaja.ToString() + "eris kuin " + johtaja2.ToString());
-        }
-        Employee p = johtaja2 as Employee;
-        p.GetInfo(); 
-        */
-        /*
+        Vehicle luokasta muutettu abstrackti mutta alun koodeja tuossa
         Vehicle car1 = new Vehicle("Audi", "A3", 1970, 2500);
+        Tulostaa vehicle luokan tiedot PrintÍnformationin avulla
         car1.PrintInformation();
         Console.WriteLine();*/
-
-        // LAITA ABSRACTICSI JA VIHREÄMAALAA SEN JÄLKEEN
-
+        
         Car mersu = new Car("Mersu", "A1", 1990, 10000, 150, "Sport" , 4);
         Car toyota = new Car("Toyota", "Avensis", 1980, 15000, 250, "Farmari", 4);
-        // muista merkitä mikä oli abstracti
+
         Console.WriteLine("\nAuton tiedot PrintInformationin avulla");
         mersu.PrintInformation();
 

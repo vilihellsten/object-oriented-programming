@@ -24,7 +24,7 @@ namespace VehicleExercise
         }
         public void CalculateConsumption()
         {
-            double kulutus = this.load / this.consumption;
+            double kulutus = this.load / this.consumption; // laskettaessa kulutus/kuorman paino(näin ainakin ymmärsin että piti tehdä), tuli hieman outoja lukemia niin käänsin? mutta toteutus toimii
             Console.WriteLine(this.make + ", Kulutus: " + kulutus);
         }
 
