@@ -22,8 +22,8 @@ internal class Program
         {
             if (p.GetProduct("Kuulokkeet") != null)
             {
-                Console.WriteLine("tuote löytyi listasta");
-                Console.WriteLine("tuotteiden varaston arvo: " + p.CalculateTotal() + "€");
+                Console.WriteLine("Tuote löytyi listasta");
+                Console.WriteLine("Tuotteiden varaston arvo: " + p.CalculateTotal() + "€");
             }
         }
 
