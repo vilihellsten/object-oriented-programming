@@ -121,9 +121,14 @@
 
         }
 
+        public void SortPrintAll()
+        {
+            Console.WriteLine(this.Name + ", " + this.Author + ", " + this.Publisher + ", " + this.price);
+        }
+        
         public int CompareTo(Book? other)
         {
-            
+            return this.Price.CompareTo(other?.Price); // jos vaihtaa this. ja other. toisin päin järjestys muuttuu
         }
     }
 }
