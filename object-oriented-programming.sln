@@ -13,9 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeExercise", "Employe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookExercise2", "BookExercise2\BookExercise2.csproj", "{87A333A0-F515-433E-83EF-5861F6277339}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleExercise", "VehicleExercise\VehicleExercise.csproj", "{FE713088-24DC-4E52-BE32-43583584C30F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VehicleExercise", "VehicleExercise\VehicleExercise.csproj", "{FE713088-24DC-4E52-BE32-43583584C30F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceExercise", "InterfaceExercise\InterfaceExercise.csproj", "{4BB74E1A-2503-41C9-B06A-D0BA80330E2B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterfaceExercise", "InterfaceExercise\InterfaceExercise.csproj", "{4BB74E1A-2503-41C9-B06A-D0BA80330E2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortExercise", "SortExercise\SortExercise.csproj", "{164828CC-1478-434C-8DF4-82FE6FE40B2D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{4BB74E1A-2503-41C9-B06A-D0BA80330E2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BB74E1A-2503-41C9-B06A-D0BA80330E2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BB74E1A-2503-41C9-B06A-D0BA80330E2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{164828CC-1478-434C-8DF4-82FE6FE40B2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{164828CC-1478-434C-8DF4-82FE6FE40B2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{164828CC-1478-434C-8DF4-82FE6FE40B2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{164828CC-1478-434C-8DF4-82FE6FE40B2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

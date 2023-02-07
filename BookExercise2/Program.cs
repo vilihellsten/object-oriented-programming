@@ -33,7 +33,7 @@ internal class Program
         //Lisätään 4 authoria
         Author author1 = new Author("Ville K", "1950", book1);
         Author author2 = new Author("Kalle V", "1960", book2);
-        Author author3 = new Author("Kertu K", "1970", book3);
+        Author author3 = new Author("Kerttu K", "1970", book3);
         Author author4 = new Author("Keijo S", "1980");          // Tälle authorille ei lisätty kirjaa
 
         Console.WriteLine("\nTulostaa kirjailijan ja kirjan tiedot jos niitä on"); // Ei kaadu jos ei löydy kirjatietoja authorilta
