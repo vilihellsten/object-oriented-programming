@@ -30,6 +30,7 @@ namespace InsuranceExercise
             • Leikattu kissa maksaa 40 €
             • Leikkaamaton kissa maksaa 60 €
             • Lintu tai matelija ei maksa mitään*/
+
             if(species == "koira")
             {
                 if(species == "koira" && isNeutererd == true)
@@ -53,6 +54,17 @@ namespace InsuranceExercise
                     return 60;
                 }
             }
+
+            if (species == "lintu")
+            {
+                return 0;
+            }
+            
+            if (species == "matelija")
+            {
+                return 0;
+            }
+
             return 0;
 
         }
