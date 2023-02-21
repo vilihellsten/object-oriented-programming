@@ -19,8 +19,8 @@ internal class Program
 
         Triangle t1 = new Triangle("Triangle", "Orange", 5, 10);
         Triangle t2 = new Triangle("Triangle", "Pink", 10, 15);
-
-        //Console.WriteLine(t1.GetInfo());
+        Console.WriteLine("GetInfo ja GetColor toimii");
+        Console.WriteLine(t1.GetInfo());
         Console.WriteLine(t2.GetColor());
 
         List<Shape> Shapes = new List<Shape>();
@@ -28,13 +28,13 @@ internal class Program
         Shapes.Add(r1); Shapes.Add(r2);
         Shapes.Add(t1); Shapes.Add(t2);
 
-        Console.WriteLine("Käy kaikki listan muodot läpi");
+        Console.WriteLine("\nKäy kaikki listan muodot läpi");
         foreach(Shape shape in Shapes)
         {
             Console.WriteLine(shape.GetInfo());
         }
 
-        Console.WriteLine("\nKäy listan läpi ja tulostaa vain ympyrän");
+        Console.WriteLine("\nKäy listan läpi ja tulostaa vain ympyrät");
         foreach (Shape shape in Shapes)
         {
             if (shape is Circle)
