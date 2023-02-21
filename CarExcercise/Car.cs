@@ -40,7 +40,7 @@ namespace CarExcercise
 
         public void ShowCarInfo()
         {
-            Console.WriteLine("merkki " +this.merkki +", nopeus " + this.nopeus);
+            Console.WriteLine("merkki " + this.merkki + ", nopeus " + this.nopeus);
         }
 
         public void Accelerate()
@@ -74,7 +74,7 @@ namespace CarExcercise
         public void Brake()
         {
             Console.WriteLine("Toinen auto jarruttaa 10%, uudet tiedot ovat");
-            this.nopeus = this.nopeus * 0.9;
+            this.nopeus = Math.Round(this.nopeus * 0.9,2);
             ShowCarInfo();
         }
     }
