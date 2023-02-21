@@ -18,7 +18,7 @@ internal class Program
         // Tämä ISBN ei kelpaa ja kysyy käyttäjää uudelleen kirjoittamaan ISBN numeron
         Book book3 = new Book("Saksa", "Kerttu K", "Vuotsi", 15, "968sdfjlkqwe3");
 
-        Console.WriteLine("\nHakee kirjat ISBN numeron mukaan, ilmoittaa jos väärä ISBN");
+        Console.WriteLine("\nHakee kirjat ISBN numeron mukaan, ilmoittaa jos haetaan väärää ISBN numeroa");
         book1.GetBookDetails("978asdqwerty1");
         book2.GetBookDetails("978asduiower2");
         book2.GetBookDetails("9781111111111");
