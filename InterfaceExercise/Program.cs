@@ -9,7 +9,10 @@ internal class Program
         Console.OutputEncoding = System.Text.Encoding.UTF8;
 
         Product p1 = new Product("Puhelin", 150, 3);
-        p1.GetProduct("Puhelin");
+        if(p1.GetProduct("Puhelin") != null)
+        {
+            Console.WriteLine("Puhelin löytyi: " + p1.ToString() + "\n");
+        }
 
         List<Product> products = new List<Product>() {
         new Product("Laturi",150, 4),
@@ -22,7 +25,7 @@ internal class Program
         {
             if (p.GetProduct("Kuulokkeet") != null)
             {
-                Console.WriteLine("Tuote löytyi listasta");
+                Console.WriteLine("Tuote löytyi listasta: " + p.ToString());
                 Console.WriteLine("Tuotteiden varaston arvo: " + p.CalculateTotal() + "€");
             }
         }
@@ -37,7 +40,7 @@ internal class Program
         {
             if(c.GetCustomer("Kalle") != null)
             {
-                Console.WriteLine("Asiakas löytyi listasta");
+                Console.WriteLine("Asiakas löytyi listasta: " + c.ToString());
                 c.GetBonus();
             }
 
