@@ -24,7 +24,7 @@ internal class Program
         Console.WriteLine(säiliö1.RemoveFromTank(80));
         Console.WriteLine(säiliö2.RemoveFromTank(80));
         Console.WriteLine(säiliö3.RemoveFromTank(80));
-
+        
         Console.WriteLine("\n--Säiliöiden tyhjennys");
 
         säiliö1.ClearTank();

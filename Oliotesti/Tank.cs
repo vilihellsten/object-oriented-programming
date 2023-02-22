@@ -24,10 +24,10 @@ namespace Oliotesti
                 return "säiliön " + this.Name + " tilaa ei muutettu";
             }
 
-            if (this.amount + amount >= GetAmount())
+            if (GetAmount() + amount >= this.capasity)
             {
                 int lisäys = this.capasity - this.amount;
-                this.amount = GetAmount();
+                this.amount = this.capasity;
                 return "säiliöön " + base.Name + " lisättiin " + lisäys + " yksikköä, säiliö täynnä";
             }
             else
@@ -43,7 +43,7 @@ namespace Oliotesti
 
         public int GetAmount()
         {
-            return capasity;
+            return amount;
         }
         // poistaa säiliöstä parametrin ilmoittaman määrän nestettä
         public string RemoveFromTank(int amount)
@@ -77,7 +77,7 @@ namespace Oliotesti
         public override string ToString()
         {
             
-            return base.ToString() + ": kapasiteetti: " + GetAmount() + ", nestettä " + this.amount;
+            return base.ToString() + ": kapasiteetti: " + this.capasity + ", nestettä " + GetAmount();
         }
     }
 }
