@@ -21,9 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SortExercise", "SortExercis
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShapesExercise", "ShapesExercise\ShapesExercise.csproj", "{3FE8E8C4-0359-41F1-BDA0-E6A22E5184FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsuranceExercise", "AnimalExercise\InsuranceExercise.csproj", "{E7E16280-1375-4FCD-9A23-E279E74C6C3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InsuranceExercise", "AnimalExercise\InsuranceExercise.csproj", "{E7E16280-1375-4FCD-9A23-E279E74C6C3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilesExercise", "FilesExercise\FilesExercise.csproj", "{F186AA85-3E64-4042-A943-7264D2AF9FEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilesExercise", "FilesExercise\FilesExercise.csproj", "{F186AA85-3E64-4042-A943-7264D2AF9FEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oliotesti", "Oliotesti\Oliotesti.csproj", "{EB2FF9F5-C1E7-4A97-9253-BF377C18502E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{F186AA85-3E64-4042-A943-7264D2AF9FEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F186AA85-3E64-4042-A943-7264D2AF9FEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F186AA85-3E64-4042-A943-7264D2AF9FEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB2FF9F5-C1E7-4A97-9253-BF377C18502E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB2FF9F5-C1E7-4A97-9253-BF377C18502E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB2FF9F5-C1E7-4A97-9253-BF377C18502E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB2FF9F5-C1E7-4A97-9253-BF377C18502E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
