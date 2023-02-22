@@ -24,7 +24,7 @@ namespace Oliotesti
                 return "säiliön " + this.Name + " tilaa ei muutettu";
             }
 
-            if (this.amount + amount > GetAmount())
+            if (this.amount + amount >= GetAmount())
             {
                 int lisäys = this.capasity - this.amount;
                 this.amount = GetAmount();
@@ -53,7 +53,7 @@ namespace Oliotesti
                 return "säiliön " + this.Name + " tilaa ei muutettu";
             }
 
-            if(this.amount - amount < 0)
+            if(this.amount - amount <= 0)
             {
                 int poisto = this.amount;
                 this.amount = 0;
