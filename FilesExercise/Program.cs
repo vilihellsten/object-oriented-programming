@@ -27,13 +27,6 @@ internal class Program
             Console.WriteLine(b);
         }
 
-        //jos olisi uusi b kirja
-        /*if (!books.Contains(b))
-         * { books.add(b))
-         * else
-         * console.Writeline("kijra on jo listassa
-        //Lisätään muutama kirja*/
-
         books.Add(new Book("Matikka", "Kalle K", 25.95));
         books.Add(new Book("Englanti", "Simo K", 26.95));
         books.Add(new Book("Ruotsi", "Sari M", 24.95));
