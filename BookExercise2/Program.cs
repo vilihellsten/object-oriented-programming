@@ -28,11 +28,11 @@ internal class Program
         Console.WriteLine("\nKutsuu kirjan authoria ominaisuutta ja tulostaa sen");
         Console.WriteLine("Kirjan author on " + book1.Author);
 
-        //Lisätään 4 authoria
+        //Lisätään 4 authoria, jos author täsmää tiedot lisätään
         Author author1 = new Author("Ville K", "1950", book1);
         Author author2 = new Author("Kalle V", "1960", book2);
         Author author3 = new Author("Kerttu K", "1970", book3);
-        Author author4 = new Author("Keijo S", "1980");          // Tälle authorille ei lisätty kirjaa
+        Author author4 = new Author("Keijo S", "1980");          // Tälle authorille ei lisätty kirjaa ollenkaan
 
         Console.WriteLine("\nTulostaa kirjailijan ja kirjan tiedot jos niitä on\n"); // Ei kaadu jos ei löydy kirjatietoja authorilta
         author1.PrintInformation();

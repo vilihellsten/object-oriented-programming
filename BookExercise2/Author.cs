@@ -24,7 +24,7 @@ namespace BookExercise2
             this.name = name;
             this.birthday = birthday;
             this.Book = book;
-            //Console.WriteLine("kirjan nimi on " + book.Name);
+
         }
 
         internal Book Book
