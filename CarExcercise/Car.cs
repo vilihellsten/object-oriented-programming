@@ -27,7 +27,7 @@ namespace CarExcercise
                 Console.WriteLine("Anna auton nopeus");
                 try
                 {
-                    this.nopeus = Convert.ToInt32(Console.ReadLine());
+                    this.nopeus = Convert.ToDouble(Console.ReadLine());
                     cont = false;
                 }
                 catch
@@ -40,7 +40,7 @@ namespace CarExcercise
 
         public void ShowCarInfo()
         {
-            Console.WriteLine("merkki " + this.merkki + ", nopeus " + this.nopeus);
+            Console.WriteLine("merkki " + this.merkki + ", nopeus " + Math.Round(this.nopeus,2));
         }
 
         public void Accelerate()
@@ -52,7 +52,7 @@ namespace CarExcercise
             {
                 try
                 {
-                    lisäys = Convert.ToInt32(Console.ReadLine());
+                    lisäys = Convert.ToDouble(Console.ReadLine());
                     cont = false;
                 }
                 catch
@@ -64,9 +64,15 @@ namespace CarExcercise
             }
 
             if (lisäys > 0)
+            {
                 this.nopeus += lisäys;
+
+            }
             else
+            {
                 this.nopeus = this.nopeus;
+                Console.WriteLine("Lisäys ei voi olla negatiivinen, auton nopeutta ei muutettu");
+            }
             Console.WriteLine("Auton uudet tiedot");
             ShowCarInfo();
         }
