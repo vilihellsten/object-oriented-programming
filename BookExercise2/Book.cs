@@ -82,7 +82,7 @@
             this.Publisher = string.Empty;
             this.Price = 0;
             this.Isbn = string.Empty;
-            theme = string.Empty;
+
         }
 
         public Book(string name, string author, string publisher, double price, string isbn)
@@ -98,7 +98,7 @@
         {
             if(this.Isbn == isbn)
             {
-                Console.WriteLine(this.Name + ", " + this.Author + ", " + this.Publisher + ", " + this.Price.ToString("0.00") + ", " + this.Isbn + ", " + theme);
+                Console.WriteLine("Kirjan nimi " + this.Name + ", Kirjailija " + this.Author + ", Publisher " + this.Publisher + ", Hinta " + this.Price.ToString("0.00") + ", ISBN: " + this.Isbn + ", Teema: " + theme);
             }
             else
             {
