@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Reflection.Metadata;
 using System.Text;
@@ -11,31 +12,15 @@ namespace BookExercise
     {
         string title;
         string author;
-        int pageCount;
         string id;
         double price;
 
         public Book()
         {
-            this.title = ""; //string.Empty; nämä on samat
+            this.title = string.Empty;
             this.author = string.Empty;
-            this.pageCount = 0;
-            this.id = "00000";
-            this.price = 19.90;
-
-            this.WriteTitle(this.pageCount, this.title);
-        }
-
-        public Book(string title, int pageCount)
-        {
-            this.title = title;
-            this.pageCount = pageCount;
-            // if(this.title.Length != 5);
-            this.author = string.Empty;
-            this.id = "00000";
-            this.price = 19.90;
-
-            this.WriteTitle(this.pageCount, this.title);
+            this.id = "ERROR";
+            this.price = 0;
         }
 
         public Book(string title, string author, string id, double price)
@@ -44,40 +29,24 @@ namespace BookExercise
             this.author = author;
             this.SetID(id);
             this.price = price;
-            this.pageCount = 0;
-            this.PrintData();
-            //this.WriteAllDetails(this.title, this.author, this.id, this.price); TÄMÄKIN TOIMII
-
-        }
-
-        public void WriteTitle(int parameter1, string parameter2)
-        {
-            Console.WriteLine("Page count {0}, " +
-            "title {1}",
-            parameter1, parameter2);
-        }
-
-
-        public void WriteAllDetails(string parameter1, string parameter2, string parameter3, double parameter4)
-        {
-            Console.WriteLine("Title is {0}, " +
-            "author is {1}, " + "id {2}," + " price is {3} e",
-            parameter1, parameter2, parameter3, parameter4);
-            // Ei TÄLLÄ HETKELLÄ KÄYTÖSSÄ, tämäkin toimii
         }
 
         public void PrintData()
         {
-            Console.WriteLine("Title is {0}, author is {1}, id {2}, price is {3} e",
+            Console.WriteLine("Title is {0}, Author is {1}, ID {2}, Price is {3} e",
             this.title, this.author, this.id, this.price);
-            // TÄLLÄ HETKELLÄ TÄMÄ KÄYTÖSSÄ
         }
 
-        public void CompareBooks(Book other) // voi nimetä muuttujan miksi vaan?
+        public void CompareBooks(Book other)
         {
-            Console.WriteLine(this.title);
-            Console.WriteLine(other.title);
-
+            if (this.price > other.price)
+            {
+                Console.WriteLine(this.title + " (" + this.price + "e) kirja on kalliimpi kuin " + other.title + " (" + other.price + "e) kirja");
+            }
+            else
+            {
+                Console.WriteLine(other.title + " (" + other.price + "e) kirja on kalliimpi kuin " + this.title + " (" + this.price + "e) kirja");
+            }
         }
 
         public void SetID(string id)
@@ -88,8 +57,7 @@ namespace BookExercise
             }
             else
             {
-                Console.WriteLine("Id not valid");
-                this.id = "ERROR";
+                this.id = "was not valid";
             }
             
         }
