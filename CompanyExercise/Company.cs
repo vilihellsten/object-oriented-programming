@@ -8,7 +8,7 @@ namespace CompanyExercise
 {
     internal class Company
     {
-        string title; // public
+        string title;
         string address;
         string phone;
         double outcome;
@@ -37,30 +37,29 @@ namespace CompanyExercise
             this.title = value;
         }
 
-        public void PrintInfo()
+        public void PrintTitle()
         {
-            Console.WriteLine("Yrityksen nimi : " + this.title); //Console.Writeline($"Yrityksen nimi : {this.title}"); Voi tehdä myös näin
+            Console.WriteLine("Yrityksen nimi : " + this.title);
         }
 
-        public override string? ToString() // tämä toimii samalla tavalla kuin print info paitsi kaikki muuttuu stringiksi?
+        public override string? ToString()
         {
-            return this.title + ", " + this.address + ", " + this.phone + ", " + this.outcome + ", " + this.expense;
+            return "Yrityksen nimi " + this.title + ", Osoite " + this.address + ", Puhelinnumero " + this.phone + ", Tulot " + this.outcome + ", Menot " + this.expense;
         }
 
         public void Result()
         {
             double prosentti = (((this.outcome - this.expense) / this.expense) * 100);
-            Console.WriteLine(prosentti + " % tuottoa");
             if (prosentti < 100)
-                Console.WriteLine("Kehnosti tuottoa");
+                Console.WriteLine(prosentti + " % tuotto = Kehnosti tuottoa");
             else
                 if (prosentti < 200)
-                Console.WriteLine("Välttävästi tuottoa");
+                Console.WriteLine(prosentti + " % tuotto = Välttävästi tuottoa");
             else
                 if (prosentti < 300)
-                Console.WriteLine("Tyydyttävästi tuottoa");
+                Console.WriteLine(prosentti + " % tuotto = Tyydyttävästi tuottoa");
             else
-                Console.WriteLine("Hyvin tuottoa");
+                Console.WriteLine(prosentti + " % tuotto = Hyvin tuottoa");
 
         }
 
