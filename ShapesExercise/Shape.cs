@@ -38,12 +38,10 @@ namespace ShapesExercise
         {
             return this.GetArea().CompareTo(other.GetArea());
         }
-        /* Tämä lajittelee listan värin mukaan
-        public int CompareTo(Shape? other)
+        /*
+        Tämä lajittelee listan värin mukaan
         {
-            string color = this.GetColor();
-            string color2 = other.GetColor();
-            return color.CompareTo(color2);
+            return this.color.CompareTo(other.color);
         }*/
     }
 }

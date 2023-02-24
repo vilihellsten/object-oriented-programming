@@ -7,7 +7,7 @@ internal class Program
     private static void Main(string[] args)
     {
         Console.OutputEncoding = System.Text.Encoding.UTF8;
-
+        Console.WriteLine("Katsoo löytyykö tuote puhelin");
         Product p1 = new Product("Puhelin", 150, 3);
         if(p1.GetProduct("Puhelin") != null)
         {

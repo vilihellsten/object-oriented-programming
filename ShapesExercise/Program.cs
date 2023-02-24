@@ -18,7 +18,7 @@ internal class Program
         //Console.WriteLine(r2.GetColor());
 
         Triangle t1 = new Triangle("Triangle", "Orange", 5, 10);
-        Triangle t2 = new Triangle("Triangle", "Pink", 10, 15);
+        Triangle t2 = new Triangle("Triangle2", "Pink", 10, 15);
 
         Console.WriteLine("GetInfo ja GetColor toimii");
         Console.WriteLine(t1.GetInfo());
@@ -51,6 +51,7 @@ internal class Program
         {
             Console.WriteLine(shape.GetInfo());
         }
+
 
     }
 }
