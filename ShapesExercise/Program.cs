@@ -44,7 +44,7 @@ internal class Program
             }
         }
 
-        Console.WriteLine("\nLajittelee listan pinta-alan mukaan");
+        Console.WriteLine("\nLajittelee listan pinta-alan (Area) mukaan");
         Shapes.Sort();
 
         foreach (Shape shape in Shapes)

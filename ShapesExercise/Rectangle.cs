@@ -32,7 +32,7 @@ namespace ShapesExercise
 
         public override string GetInfo()
         {
-            return base.type + ", " + base.color + ", " + this.length + ", " + this.width + ", pinta-ala: " + this.GetArea();
+            return "Shape " + base.type + ", Color " + base.color + ", Length " + this.length + ", Width " + this.width + ", Area: " + this.GetArea();
         }
     }
 }
