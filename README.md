@@ -1,3 +1,3 @@
 # Olio-ohjelmointi kurssi
 
-## kurssin aikana tehdyt harjoitukset
+### kurssin aikana tehdyt harjoitukset
