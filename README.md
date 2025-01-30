@@ -1,1 +1,3 @@
-# object-oriented-programming/Olio-ohjelmoinnin perusteet kurssin harjoitustehtävät ja kurssin lopputentti. 
+# Olio-ohjelmointi kurssi
+
+## kurssin aikana tehdyt harjoitukset
